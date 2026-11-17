@@ -28,6 +28,12 @@ This hands-on Azure Administrator project documents the deployment, configuratio
 - Deployed a Windows virtual machine.
 - Resolved VM image security compatibility issues.
 - Selected an available VM size.
+- 
+## Azure VM Deployment Screenshot
+
+This screenshot shows my Windows Server 2022 virtual machine running in Microsoft Azure.
+
+![Azure VM Deployment](AZ104-WDS-1.png)
 
 ### 2. Azure Networking and Security
 - Configured Network Security Group rules.
