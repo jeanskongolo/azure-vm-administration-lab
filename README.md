@@ -52,6 +52,20 @@ This screenshot shows my Windows Server 2022 virtual machine running in Microsof
 - RDP connection troubleshooting
 - Windows Remote Desktop Services investigation
 - Network connectivity verification
+## Azure Network Security Group Configuration
+
+Configured an Azure Network Security Group (NSG)
+to secure remote access to a Windows Server 2022 VM.
+
+### Security Configuration
+- RDP Protocol: TCP
+- RDP Port: 3389
+- Rule Priority: 1010
+- Source: Restricted to one authorized IP address
+- Default inbound policy: Deny
+
+### Screenshot
+![Azure NSG Security Configuration](NETWSET.png)
 
 ## Skills Demonstrated
 Azure Administration | Virtual Machines | Azure Networking | Network Security Groups | PowerShell | Windows Administration | Troubleshooting
