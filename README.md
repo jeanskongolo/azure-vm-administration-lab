@@ -78,3 +78,69 @@ Azure Administration | Virtual Machines | Azure Networking | Network Security Gr
 
 ## Security
 This repository is intended to contain no passwords, credentials, private keys, or sensitive connection details.
+
+
+## 4. Azure Network Routing and Troubleshooting
+
+### Project Objective
+Implemented and validated custom network routing in Microsoft Azure using User Defined Routes (UDRs), subnet associations, and Azure Network Watcher.
+
+### Lab Environment
+
+| Component | Configuration |
+|---|---|
+| Azure Region | East US 2 |
+| Resource Group | Practice-skills |
+| Virtual Machine | AZ104-WINDOWS-01 |
+| Virtual Network | vnet-eastus2-1 |
+| Subnet | snet-eastus2-1 |
+| Subnet Address Range | 172.16.0.0/24 |
+| Route Table | RT-AZ104-LAB |
+
+### Hands-on Implementation
+
+- Inspected Azure default system routes.
+- Analyzed longest prefix match routing behavior.
+- Created and deployed a custom Azure route table.
+- Configured a User Defined Route (UDR).
+- Associated the route table with an existing subnet.
+- Verified active routes through the network interface.
+- Performed network diagnostics using Azure Network Watcher.
+- Dissociated the subnet and removed the test route table.
+
+### Custom Route Configuration
+
+| Parameter | Value |
+|---|---|
+| Route Name | Block-Test-Network |
+| Destination | 192.0.2.0/24 |
+| Next Hop Type | None |
+| Route State | Active |
+
+### Network Watcher Diagnostic Results
+
+| Test Parameter | Result |
+|---|---|
+| Source IP | 172.16.0.4 |
+| Destination IP | 192.0.2.10 |
+| Next Hop Type | None |
+| Diagnostic Status | Successful |
+
+The diagnostic confirmed that Azure selected the custom route to drop traffic destined for the reserved test network.
+
+### Skills Demonstrated
+
+- Azure Network Administration
+- Azure Route Tables
+- User Defined Routes (UDR)
+- Virtual Networks and Subnets
+- CIDR Addressing
+- Longest Prefix Match
+- Effective Route Analysis
+- Azure Network Watcher
+- Network Troubleshooting
+- Azure Resource Lifecycle Management
+
+### Project Outcome
+
+Successfully implemented, validated, and removed a custom Azure routing configuration in a hands-on lab environment, demonstrating practical network administration and troubleshooting skills aligned with AZ-104.
