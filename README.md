@@ -144,3 +144,9 @@ The diagnostic confirmed that Azure selected the custom route to drop traffic de
 ### Project Outcome
 
 Successfully implemented, validated, and removed a custom Azure routing configuration in a hands-on lab environment, demonstrating practical network administration and troubleshooting skills aligned with AZ-104.
+
+### Network Watcher Verification Screenshot
+
+The following screenshot confirms that Azure selected the custom route with a Next Hop type of None.
+
+![Azure Network Watcher Next Hop Verification](Azure-Next-Hop-Verification.png)
