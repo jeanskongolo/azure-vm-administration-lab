@@ -150,3 +150,72 @@ Successfully implemented, validated, and removed a custom Azure routing configur
 The following screenshot confirms that Azure selected the custom route with a Next Hop type of None.
 
 ![Azure Network Watcher Next Hop Verification](Azure-Next-Hop-Verification.png)
+
+
+---
+
+## 5. Azure Network Security and IP Flow Verification
+
+### Project Objective
+
+Validated Azure Network Security Group (NSG) rules using Azure Network Watcher IP Flow Verify to analyze authorized and unauthorized network traffic in a hands-on Azure lab environment.
+
+### Lab Environment
+
+| Component | Configuration |
+|---|---|
+| Cloud Platform | Microsoft Azure |
+| Azure Region | East US 2 |
+| Virtual Machine | AZ104-WINDOWS-01 |
+| Operating System | Windows |
+| Virtual Network | vnet-eastus2-1 |
+| Subnet | snet-eastus2-1 |
+| Private IP Address | 172.16.0.4 |
+| Network Security Group | AZ104-WINDOWS-01-nsg |
+| Protocol | TCP |
+| RDP Port | 3389 |
+
+### Hands-on Implementation
+
+- Verified virtual machine operational status.
+- Verified Azure VM Agent readiness.
+- Inspected inbound and outbound NSG security rules.
+- Analyzed NSG rule priorities and access permissions.
+- Verified RDP access restricted to an authorized source IP address.
+- Configured Azure Network Watcher IP Flow Verify.
+- Tested authorized and unauthorized inbound traffic.
+- Analyzed outbound internet traffic permissions.
+- Identified matching security rules without modifying the existing NSG configuration.
+
+### Network Security Verification Results
+
+| Test Scenario | Result | Matching Security Rule |
+|---|---|---|
+| Authorized inbound RDP traffic | Access Allowed | TCP_3389 |
+| Outbound internet traffic | Access Allowed | AllowInternetOutBound |
+| Unauthorized inbound RDP traffic | Access Denied | DenyAllInBound |
+
+### Troubleshooting Experience
+
+Identified an incorrect traffic direction during IP flow verification. Corrected the direction from outbound to inbound and successfully verified that unauthorized inbound RDP traffic was denied.
+
+### Skills Demonstrated
+
+- Microsoft Azure Administration
+- Azure Network Watcher
+- IP Flow Verification
+- Network Security Groups (NSGs)
+- Inbound and Outbound Traffic Analysis
+- TCP/IP Networking
+- CIDR Addressing
+- Network Access Control
+- NSG Rule Priority Analysis
+- Remote Desktop Protocol (RDP)
+- Cloud Network Security
+- Network Troubleshooting
+
+### Project Outcome
+
+Successfully validated Azure network security rules using IP Flow Verify. Confirmed that authorized RDP traffic was permitted and unauthorized inbound traffic was denied, demonstrating practical Azure network administration and security troubleshooting skills aligned with AZ-104.
+
+The diagnostic results validated security rule decisions rather than end-to-end network connectivity.
