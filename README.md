@@ -219,3 +219,25 @@ Identified an incorrect traffic direction during IP flow verification. Corrected
 Successfully validated Azure network security rules using IP Flow Verify. Confirmed that authorized RDP traffic was permitted and unauthorized inbound traffic was denied, demonstrating practical Azure network administration and security troubleshooting skills aligned with AZ-104.
 
 The diagnostic results validated security rule decisions rather than end-to-end network connectivity.
+
+
+### Azure Network Watcher Diagnostic Screenshots
+
+#### Test 1: Authorized Inbound RDP Traffic
+
+Verified that authorized inbound TCP traffic on port 3389 was permitted by the TCP_3389 security rule.
+
+![Authorized RDP Traffic](ip-flow-allowed.png)
+
+#### Test 2: Outbound Internet Traffic
+
+Verified that outbound traffic was permitted by the AllowInternetOutBound security rule.
+
+![Outbound Internet Traffic](ip-flow-outbound.png)
+
+#### Test 3: Unauthorized Inbound Traffic
+
+Verified that unauthorized inbound RDP traffic was blocked by the DenyAllInBound security rule.
+
+![Unauthorized Inbound Traffic](ip-flow-denied.png)
+
