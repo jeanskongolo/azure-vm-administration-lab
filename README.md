@@ -263,4 +263,4 @@ Verified that unauthorized inbound RDP traffic was blocked by the DenyAllInBound
 
 ### CPU Performance Monitoring Screenshot
 
-![Azure CPU Monitoring](azure-cpu-metrics.png)
+![Azure CPU Monitoring](./azure-cpu-metrics..png)
