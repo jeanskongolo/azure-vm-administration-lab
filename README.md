@@ -241,3 +241,26 @@ Verified that unauthorized inbound RDP traffic was blocked by the DenyAllInBound
 
 ![Unauthorized Inbound Traffic](ip-flow-denied.png)
 
+## Azure Monitor and CPU Alert Management
+
+### Hands-on Implementation
+
+- Configured Azure Monitor for Windows virtual machine performance monitoring.
+- Created a CPU metric alert with an 80% threshold.
+- Configured a 5-minute evaluation period.
+- Created an action group for email notifications.
+- Verified email delivery and tested the action group.
+- Simulated high CPU utilization using PowerShell.
+- Successfully triggered a Severity 2 warning alert.
+- Verified automatic alert resolution after CPU utilization returned to normal.
+
+### Lab Results
+
+- CPU utilization reached 99.61%.
+- High CPU alert successfully triggered.
+- Alert email notification successfully received.
+- Automatic alert resolution successfully verified.
+
+### CPU Performance Monitoring Screenshot
+
+![Azure CPU Monitoring](azure-cpu-metrics.png)
